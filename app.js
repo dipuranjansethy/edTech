@@ -38,6 +38,6 @@ app.use("/api/v1",other)
 
 export default app;
 app.get("/",(req,res)=>{
-    res.send("<h1>site is working click Click<a href=${process.env.FRONT_URL}>Here</a> to visit frontend</h1>")
+    res.send(`<h1>site is working click Click<a href=${process.env.FRONT_URL}>Here</a> to visit frontend</h1>`)
 })
 app.use(ErrorMiddleware)
